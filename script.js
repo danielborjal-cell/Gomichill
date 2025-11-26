@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     // Catalogo con imágenes reales
     const catalog = [
-        {id:1,name:'Mango',price:'',desc:'Delicioso mango fresco con gomitas y chamoy',image:'assets/producto1.png'},
-        {id:2,name:'Piña',price:'',desc:'Refrescante piña con gomitas y chamoy',image:'assets/producto2.png'},
+        {id:1,name:'Mango',price:'',desc:'Delicioso mango fresco con gomitas y chamoy',image:'assets/producto2.png'},
+        {id:2,name:'Piña',price:'',desc:'Refrescante piña con gomitas y chamoy',image:'assets/producto1.png'},
         {id:4,name:'Gomitas',price:'',desc:'Gomitas frescas y deliciosas con chamoy',image:'assets/gomitas.png'},
         {id:5,name:'Chamoy',price:'',desc:'Nuestro delicioso chamoy artesanal',image:'assets/chamoy.png'}
     ];
@@ -20,9 +20,6 @@ document.addEventListener('DOMContentLoaded',()=>{
                 <div class="item-image"><img src="${item.image}" alt="${item.name}" style="width:100%;height:100%;object-fit:cover;border-radius:10px"></div>
                 <div class="item-title">${item.name}</div>
                 <div class="muted">${item.desc}</div>
-                <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.6rem">
-                    <button class="btn" onclick="alert('Gracias por tu interés en ${item.name}. Contacta al número o web para pedir.')">Pedir</button>
-                </div>
             `;
             grid.appendChild(card);
         });
@@ -40,7 +37,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                 <h3>⭐ ${featured.name}</h3>
                 <p class="desc">${featured.desc}</p>
                 <div class="price">${featured.price}</div>
-                <button class="btn" onclick="alert('Gracias por tu interés en ${featured.name}. Contacta al número o web para pedir.')">Pedir ahora</button>
+                <button class="btn" onclick="alert('¡Gracias por pedir tu vaso de Gomichill! Reclámalo en nuestro punto físico.')">Pedir ahora</button>
             </div>
         `;
     }
