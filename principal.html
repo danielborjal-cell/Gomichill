@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomichill - Gomitas con chamoy y fruta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Gomichill - Gomitas con frutas y chamoy. Ver nuestro catálogo y dejarnos tu opinión." />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-wrap">
+                <!-- Guarda tu logo en assets/logo.png -->
+                <img id="brandLogo" src="assets/logo.png" alt="Gomichill" onerror="this.style.opacity=.6;this.nextElementSibling.style.display='inline-block'">
+                <span class="logo-fallback">Gomichill</span>
+            </div>
+            <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="#catalog">Catálogo</a>
+                <a href="#about">Quiénes somos</a>
+                <a href="#team">Equipo</a>
+                <a href="#social">Redes Sociales</a>
+                <a href="#survey">Encuesta</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <h1>Gomitas con fruta y chamoy</h1>
+                    <p class="lead">El toque que pica... ¡y te encanta! Explora nuestro catálogo y pidelo en nuestro stand.</p>
+                    <p>
+                        <a class="btn" href="#catalog">Ver catálogo</a>
+                        <a class="btn btn-ghost" href="#survey">Dejar opinión</a>
+                    </p>
+                </div>
+                <div class="qr-card">
+                    <!-- Logo como imagen directa -->
+                    <img src="assets/logo.png" alt="Gomichill logo" style="max-width:100%;height:auto;border-radius:12px;object-fit:contain">
+                </div>
+            </div>
+        </section>
+
+        <section id="catalog" class="section container">
+            <h2>Nuestro producto principal</h2>
+            <div id="featuredProduct" class="featured-product" style="margin-bottom:2rem">
+                <!-- Renderizado por script.js -->
+            </div>
+
+            <h2 style="margin-top:2rem">Lo que contiene nuestro producto</h2>
+            <p class="muted">Nuestros productos más populares. Toc, fruta y chamoy en cada bocado.</p>
+            <div id="catalogGrid" class="catalog-grid">
+                <!-- Items renderizados por script.js -->
+            </div>
+        </section>
+
+        <section id="about" class="section about container">
+            <h2>Quiénes somos</h2>
+            <p>Somos un equipo de amigos apasionados por los sabores mexicanos. Mezclamos frutas frescas con gomitas y chamoy para crear una experiencia única.</p>
+            <ul>
+                <li><strong>Misión:</strong> Llevar sabor y alegría en cada bocado.</li>
+                <li><strong>Visión:</strong> Ser el referente local de snacks frutales con personalidad.</li>
+            </ul>
+        </section>
+
+        <section id="team" class="section container team-section">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+                <div>
+                    <h2>Conoce nuestro equipo</h2>
+                    <p class="muted">Personas que hacen posible Gomichill. Conoce sus roles y experiencia.</p>
+                </div>
+            </div>
+            <div id="teamGrid" class="team-grid" style="margin-top:1rem">
+                <!-- Cards generadas por script.js -->
+            </div>
+        </section>
+
+        <section id="survey" class="section container">
+            <h2>Encuesta de satisfacción</h2>
+            <p class="muted">Ya disponemos de una encuesta en Google Forms. Haz click en el botón para acceder.</p>
+            <p>
+            
+                <!-- Reemplaza el href con el link real de tu Google Form -->
+                <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf2MuQtsme-up__CJsDYgFnl4GOSFRolRe_Y8QO6pFVUSxn1A/viewform?usp=dialog" target="_blank" rel="noopener">Ir a la encuesta</a>
+            </p>
+        </section>
+
+        <section id="social" class="section container social-section">
+            <h2>Síguenos en redes sociales</h2>
+            <p class="muted">Mantente al día con nuestras novedades, promociones y más.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/gomichill_oficiall/" target="_blank" rel="noopener" class="social-link instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span>@gomichill_oficiall</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="currentYear"></span> Gomichill. Hecho con mucho chamoy.</p>
+            <p class="muted small">Diseñado para acceder desde un QR y compartir en redes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
